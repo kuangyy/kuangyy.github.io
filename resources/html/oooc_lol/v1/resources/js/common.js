@@ -1,1 +1,317 @@
-var regxUtil={isEmail:function(t){return/^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/.test(t)},isMobile:function(t){return/^1[0-9]\d{10}$/.test(t)},vaildUsername:function(t){return/^\w{6,32}$/.test(t)},vaildPwd:function(t){return/^\w{6,32}$/.test(t)}};Date.prototype.format=function(t){var e={"M+":this.getMonth()+1,"d+":this.getDate(),"h+":this.getHours(),"m+":this.getMinutes(),"s+":this.getSeconds(),"q+":Math.floor((this.getMonth()+3)/3),S:this.getMilliseconds()};if(/(y+)/.test(t)){t=t.replace(RegExp.$1,(this.getFullYear()+"").substr(4-RegExp.$1.length))}for(var n in e){if(new RegExp("("+n+")").test(t)){t=t.replace(RegExp.$1,RegExp.$1.length==1?e[n]:("00"+e[n]).substr((""+e[n]).length))}}return t};String.prototype.format=function(t){var e=this;if(arguments.length>0){if(arguments.length==1&&typeof t=="object"){for(var n in t){if(t[n]!=undefined){var i=new RegExp("({"+n+"})","g");e=e.replace(i,t[n])}}}else{for(var a=0;a<arguments.length;a++){if(arguments[a]!=undefined){var i=new RegExp("({)"+a+"(})","g");e=e.replace(i,arguments[a])}}}}return e};String.prototype.trim=function(t){t=t?t:"\\s";t="("+t+")";var e=new RegExp("(^"+t+"*)|("+t+"*$)","g");return this.replace(e,"")};function openUrl(t,e){e=e||"_self";window.open(t,e)}function postUrl(t,e){var n="form-hide-submit-unique";var i=$("<form method='post'></form>"),a;i.attr({action:t});if(e!=null){if(typeof e=="object"){if(e instanceof Array){$.each(e,function(t,e){a=$("<input type='hidden'>");a.attr({name:e.name});a.val(e.value);i.append(a)})}else{$.each(e,function(t,e){a=$("<input type='hidden'>");a.attr({name:t});a.val(e);i.append(a)})}}else if(typeof e=="string"){i.attr({action:i.attr("action")+e})}}var r=$("#"+n);if(r.length<=0){$("body").append('<div style="display: none;" id="'+n+'"></div>');r=$("#"+n)}r.html(i);i.submit()}Date.prototype.diff=function(t){return(this.getTime()-t.getTime())/(24*60*60*1e3)};Date.prototype.lastdate=function(){var t=new Date(this.getFullYear(),this.getMonth()+1,0);return t.getDate()};Date.prototype.clone=function(){return new Date(this.getTime())};Date.prototype.intervalDays=function(t){return(this.getTime()-t.getTime())/(24*60*60*1e3)};Date.prototype.intervalMonths=function(t){var e=t.clone().intervalDays(this.clone());var n=Math.floor(e/28);if(n>0){var i=this.getFullYear();var a=this.getMonth()+1;var r=this.getDate();var o=this.lastMonthDay();var s=t.getFullYear();var l=t.getMonth()+1;var u=t.getDate();var f=t.lastMonthDay();if(i<=s){var c=s-i;var p=l-a;if(r>u&&u!=f){p=p-1}return c*12+p}else{return 0}}else{return 0}};Date.prototype.lastMonthDay=function(){var t=new Date(this.getFullYear(),this.getMonth()+1,0);return t.getDate()};Date.prototype.addMonth=function(t){var e=this.clone();var n=e.getMonth()+t;var i=new Date(e.getFullYear(),n+1,0);if(e.getDate()>i.getDate()){e.setDate(1);e.setMonth(n);e.setDate(i.getDate())}else{e.setMonth(n)}return e};String.prototype.replaceAll=function(t,e,n){if(!RegExp.prototype.isPrototypeOf(t)){return this.replace(new RegExp(t,n?"gi":"g"),e)}else{return this.replace(t,e)}};var datepickerOpt={numberOfMonths:2,selectOtherMonths:false,showOtherMonths:false,showMonthAfterYear:true,monthNames:["一月","二月","三月","四月","五月","六月","七月","八月","九月","十月","十一月","十二月"],monthNamesShort:["一","二","三","四","五","六","七","八","九","十","十一","十二"],dayNames:["星期日","星期一","星期二","星期三","星期四","星期五","星期六"],dayNamesShort:["周日","周一","周二","周三","周四","周五","周六"],dayNamesMin:["日","一","二","三","四","五","六"],dateFormat:"yy-mm-dd",minDate:"Now"};(function(t,e){var n={ajax:function(t){var e={type:"POST",dataType:"json"};$.extend(e,t);$.ajax(e)}};t.$AJAX=n})(window);var alertify={tips_success:function(t,e){t=t?t:"成功";$("body").append('<div class="submit-tips alert alert-success" style=\'display: none\'><i class="fa fa-check" aria-hidden="true"></i> '+t+"</div>");var n=$(".submit-tips");n.fadeIn(300);window.setTimeout(function(){n.fadeOut(200);n.remove()},3e3);e&&e()},tips_error:function(t,e){t=t?t:"失败";$("body").append('<div class="submit-tips alert alert-danger" style=\'display: none\'><i class="fa fa-close" aria-hidden="true"></i> '+t+"</div>");var n=$(".submit-tips");n.fadeIn(300);window.setTimeout(function(){n.fadeOut(200);n.remove()},3e3);e&&e()},tips_info:function(t,e){t=t?t:"tips";$("body").append('<div class="submit-tips alert alert-info" style=\'display: none\'><i class="fa fa-info-circle" aria-hidden="true"></i> '+t+"</div>");var n=$(".submit-tips");n.fadeIn(300);window.setTimeout(function(){n.fadeOut(200);n.remove()},3e3);e&&e()}};var insertOrReplaceSelect=function(t,e){var n=function(t,e){if(typeof t.selectionStart==="number"&&typeof t.selectionEnd==="number"){var n=t.selectionStart,i=t.selectionEnd,a=n,r=t.value;t.value=r.substring(0,n)+e+r.substring(i,r.length);a+=e.length;t.selectionStart=t.selectionEnd=a}else{t.value+=e}};if(typeof t=="object"){for(i in t){n(t[i],e)}}else{n(t,e)}};var TOOLS={MD_HTML:{toMarkdown:function(t){return toMarkdown(t)},toHtml:function(t){return Markdown.toHTML(t)}},QRCODE:{getTable:function(t,e){$(t).qrcode({render:"table",text:e})},getCavans:function(t,e){$(t).qrcode({text:e})}}};function rgb2hex(t){if(/^#[0-9A-F]{6}$/i.test(t)){return t}t=t.match(/^rgb\((\d+),\s*(\d+),\s*(\d+)\)$/);if(t===null){return"N/A"}function e(t){return("0"+parseInt(t).toString(16)).slice(-2)}return"#"+e(t[1])+e(t[2])+e(t[3])}if($(".github-commit").length){$.ajax({url:"https://api.github.com/repos/dogfalo/materialize/commits/master",dataType:"json",success:function(t){var e=t.sha,n=jQuery.timeago(t.commit.author.date);if(window_width<1120){e=e.substring(0,7)}$(".github-commit").find(".date").html(n);$(".github-commit").find(".sha").html(e).attr("href",t.html_url)}})}
+var regxUtil = {
+    isEmail : function(val) {
+        return (/^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/.test(val));
+    },
+    isMobile : function(val) {
+        return (/^1[0-9]\d{10}$/.test(val));
+    },
+    vaildUsername : function(val) {
+        return (/^\w{6,32}$/.test(val));
+    },
+    vaildPwd : function(val) {
+        return (/^\w{6,32}$/.test(val));
+    }
+}
+
+Date.prototype.format = function(fmt) {
+    var o = {
+        "M+" : this.getMonth() + 1, // 月份
+        "d+" : this.getDate(), // 日
+        "h+" : this.getHours(), // 小时
+        "m+" : this.getMinutes(), // 分
+        "s+" : this.getSeconds(), // 秒
+        "q+" : Math.floor((this.getMonth() + 3) / 3), // 季度
+        "S" : this.getMilliseconds()
+
+    };
+    if (/(y+)/.test(fmt)) {
+        fmt = fmt.replace(RegExp.$1, (this.getFullYear() + "").substr(4 - RegExp.$1.length));
+    }
+    for ( var k in o) {
+        if (new RegExp("(" + k + ")").test(fmt)) {
+            fmt = fmt.replace(RegExp.$1, (RegExp.$1.length == 1) ? (o[k]) : (("00" + o[k]).substr(("" + o[k]).length)));
+        }
+    }
+    return fmt;
+};
+String.prototype.format = function(args) {
+    var result = this;
+    if (arguments.length > 0) {
+        if (arguments.length == 1 && typeof (args) == "object") {
+            for (var key in args) {
+                if(args[key]!=undefined){
+                    var reg = new RegExp("({" + key + "})", "g");
+                    result = result.replace(reg, args[key]);
+                }
+            }
+        }
+        else {
+            for (var i = 0; i < arguments.length; i++) {
+                if (arguments[i] != undefined) {
+                    var reg= new RegExp("({)" + i + "(})", "g");
+                    result = result.replace(reg, arguments[i]);
+                }
+            }
+        }
+    }
+    return result;
+};
+
+String.prototype.trim = function(s) {
+    s = (s ? s : "\\s");
+    s = ("(" + s + ")");
+    var reg_trim = new RegExp("(^" + s + "*)|(" + s + "*$)", "g");
+    return this.replace(reg_trim, "");
+};
+
+function openUrl(url,name){
+    name = name || "_self";
+    window.open(url,name);
+}
+
+function postUrl(url,data){
+    var id = "form-hide-submit-unique";
+    var form = $("<form method='post'></form>"),input;
+    form.attr({"action":url});
+    if(data!=null){
+        if(typeof data=="object"){
+            if(data instanceof Array){// serializeArray 方式
+                $.each(data,function(key,value){
+                    input = $("<input type='hidden'>");
+                    input.attr({"name":value.name});
+                    input.val(value.value);
+                    form.append(input);
+                });
+            }else{
+                $.each(data,function(key,value){// {name:value}格式
+                    input = $("<input type='hidden'>");
+                    input.attr({"name":key});
+                    input.val(value);
+                    form.append(input);
+                });
+            }
+        }else if(typeof data=="string"){
+            form.attr({"action":form.attr("action")+data});
+        }
+    }
+    var node = $("#"+id);
+    if(node.length<=0){
+        $("body").append('<div style="display: none;" id="'+id+'"></div>');
+        node = $("#"+id);
+    }
+    node.html(form);
+    form.submit();
+
+}
+
+Date.prototype.diff = function(date){
+    return (this.getTime() - date.getTime())/(24 * 60 * 60 * 1000);
+}
+Date.prototype.lastdate = function (){
+    var day = new Date(this.getFullYear(),this.getMonth()+1,0);
+    return  day.getDate();
+}
+
+Date.prototype.clone = function (){
+    return new Date(this.getTime());
+}
+Date.prototype.intervalDays = function(date){// 时间相差的天
+    return (this.getTime() - date.getTime())/(24 * 60 * 60 * 1000);
+}
+Date.prototype.intervalMonths = function (date){// 时间相差的自然月
+    var days = date.clone().intervalDays(this.clone());
+    var monthTemp = Math.floor(days/28);
+    if(monthTemp>0){
+        var thisYear = this.getFullYear();
+        var thisMonth = this.getMonth()+1;
+        var thisDay = this.getDate();
+        var thisLastDay = this.lastMonthDay();
+
+        var dateYear = date.getFullYear();
+        var dateMonth = date.getMonth()+1;
+        var dateDay = date.getDate();
+        var dateLastDay = date.lastMonthDay();
+        if(thisYear<=dateYear){
+            var year = dateYear-thisYear;
+            // 0-11 2016-05-01~2017-06-01
+            // 0-11 2016-05-01~2017-05-01
+            // 0-11 2016-05-01~2017-04-01
+            var month = dateMonth-thisMonth;
+            if(thisDay>dateDay&&dateDay!=dateLastDay){
+                month = month-1;
+            }
+            return (year*12)+month;
+        }else{
+            return 0;
+        }
+    }else{
+        return 0;
+    }
+}
+Date.prototype.lastMonthDay = function (){// 当月的最后一天
+    var day = new Date(this.getFullYear(),this.getMonth()+1,0);
+    return  day.getDate();
+}
+
+Date.prototype.addMonth = function (monthNum){// 添加指定自然月
+    var date = this.clone();
+    var num = date.getMonth()+monthNum;
+    var day = new Date(date.getFullYear(),num+1,0);
+    if (date.getDate()>day.getDate()){
+        date.setDate(1);
+        date.setMonth(num);
+        date.setDate(day.getDate());
+    }else{
+        date.setMonth(num);
+    }
+    return  date;
+}
+
+
+String.prototype.replaceAll = function(reallyDo, replaceWith, ignoreCase) {
+    if (!RegExp.prototype.isPrototypeOf(reallyDo)) {
+        return this.replace(new RegExp(reallyDo, (ignoreCase ? "gi" : "g")), replaceWith);
+    } else {
+        return this.replace(reallyDo, replaceWith);
+    }
+};
+
+var datepickerOpt = {
+    numberOfMonths : 2,
+    selectOtherMonths : false,
+    showOtherMonths : false,
+    showMonthAfterYear : true,
+    monthNames : [ '一月', '二月', '三月', '四月', '五月', '六月', '七月', '八月', '九月', '十月', '十一月', '十二月' ],
+    monthNamesShort : [ '一', '二', '三', '四', '五', '六', '七', '八', '九', '十', '十一', '十二' ],
+    dayNames : [ '星期日', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六' ],
+    dayNamesShort : [ '周日', '周一', '周二', '周三', '周四', '周五', '周六' ],
+    dayNamesMin : [ '日', '一', '二', '三', '四', '五', '六' ],
+    dateFormat : 'yy-mm-dd',
+    minDate : "Now"
+};
+
+(function( window, undefined ) {
+    var $AJAX = {
+        ajax : function(opt) {
+            var defOpt = {
+                type : "POST",
+                dataType : "json",
+            };
+            $.extend(defOpt, opt);
+            $.ajax(defOpt);
+        }
+    };
+    window.$AJAX = $AJAX;
+})( window );
+
+var alertify = {
+    tips_success:function(msg,callback){
+        msg=msg?msg:"成功";
+        $("body").append("<div class=\"submit-tips alert alert-success\" style='display: none'><i class=\"fa fa-check\" aria-hidden=\"true\"></i> "+msg+"</div>");
+        var tips = $(".submit-tips");
+        tips.fadeIn(300);
+        window.setTimeout(function(){tips.fadeOut(200);tips.remove();},3000);
+        callback && callback();
+    },
+    tips_error:function(msg,callback){
+        msg=msg?msg:"失败";
+        $("body").append("<div class=\"submit-tips alert alert-danger\" style='display: none'><i class=\"fa fa-close\" aria-hidden=\"true\"></i> "+msg+"</div>");
+        var tips = $(".submit-tips");
+        tips.fadeIn(300);
+        window.setTimeout(function(){tips.fadeOut(200);tips.remove();},3000);
+        callback && callback();
+    },
+    tips_info:function(msg,callback){
+        msg=msg?msg:"tips";
+        $("body").append("<div class=\"submit-tips alert alert-info\" style='display: none'><i class=\"fa fa-info-circle\" aria-hidden=\"true\"></i> "+msg+"</div>");
+        var tips = $(".submit-tips");
+        tips.fadeIn(300);
+        window.setTimeout(function(){tips.fadeOut(200);tips.remove();},3000);
+        callback && callback();
+    }
+}
+
+
+var insertOrReplaceSelect = function(obj,str) {
+
+    var insertText = function(obj,str) {
+        if (typeof obj.selectionStart === 'number' && typeof obj.selectionEnd === 'number') {
+            var startPos = obj.selectionStart,
+                endPos = obj.selectionEnd,
+                cursorPos = startPos,
+                tmpStr = obj.value;
+            obj.value = tmpStr.substring(0, startPos) + str + tmpStr.substring(endPos, tmpStr.length);
+            cursorPos += str.length;
+            obj.selectionStart = obj.selectionEnd = cursorPos;
+        } else {
+            obj.value += str;
+        }
+    };
+
+    if(typeof obj == 'object'){
+        for(i in obj){
+            insertText(obj[i],str);
+        }
+    }else{
+        insertText(obj,str);
+    }
+}
+
+
+var TOOLS = {
+    MD_HTML : {
+        toMarkdown : function(str){
+            return toMarkdown(str);
+        },
+        toHtml : function(str) {
+            return Markdown.toHTML(str);
+        }
+    },
+    QRCODE : {
+        getTable : function(id,text){
+            $(id).qrcode({
+                render : "table",
+                text : text
+            });
+        },
+        getCavans : function(id,text){
+            $(id).qrcode({
+                text : text
+            });
+        }
+    }
+}
+
+// convert rgb to hex value string
+function rgb2hex(rgb) {
+    if (/^#[0-9A-F]{6}$/i.test(rgb)) { return rgb; }
+
+    rgb = rgb.match(/^rgb\((\d+),\s*(\d+),\s*(\d+)\)$/);
+
+    if (rgb === null) { return "N/A"; }
+
+    function hex(x) {
+        return ("0" + parseInt(x).toString(16)).slice(-2);
+    }
+
+    return "#" + hex(rgb[1]) + hex(rgb[2]) + hex(rgb[3]);
+}
+
+
+
+// Github Latest Commit
+if ($('.github-commit').length) { // Checks if widget div exists (Index only)
+    $.ajax({
+        url: "https://api.github.com/repos/dogfalo/materialize/commits/master",
+        dataType: "json",
+        success: function (data) {
+            var sha = data.sha,
+                date = jQuery.timeago(data.commit.author.date);
+            if (window_width < 1120) {
+                sha = sha.substring(0,7);
+            }
+            $('.github-commit').find('.date').html(date);
+            $('.github-commit').find('.sha').html(sha).attr('href', data.html_url);
+        }
+    });
+}

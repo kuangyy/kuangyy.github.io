@@ -1,1 +1,73 @@
-!function(e){document.addEventListener("mousemove",t,true);document.addEventListener("mouseup",l,true);document.addEventListener("mousedown",u,true);document.addEventListener("dblclick",d,true);var i,o;var n,r;function a(t){console.log(t);e.onTextClick&&e.onTextClick()}function t(t){i=t.clientX,o=t.clientY}function c(){var t={text:"",pos:-1};if(o==0||o==0){return t}var e=document.caretRangeFromPoint(i,o);if(!e){return t}if(e.startContainer.data){var n=null;if(e.startContainer.getBoundingClientRect){n=e.startContainer.getBoundingClientRect()}else if(e.startContainer.parentElement&&e.startContainer.parentElement.getBoundingClientRect){n=e.startContainer.parentElement.getBoundingClientRect()}if(n==null||n&&n.left<i&&i<n.right&&n.top<o&&o<n.bottom){t.text=e.startContainer.data;t.pos=e.startOffset;return t}}return t}function u(t){n=t.clientX;r=t.clientY}function l(t){if(Math.abs(t.clientX-n)>2||Math.abs(t.clientY-r)>2){var e=document.selection==undefined?document.getSelection().toString():document.selection.createRange().text;if(e!=""){if(e.length>2e3)e=e.substr(0,2e3);a(e)}}}function d(t){var e=document.selection==undefined?document.getSelection().toString():document.selection.createRange().text;if(e!=""){if(e.length>2e3)e=e.substr(0,2e3);a(e)}}}(document);
+!function(d) {
+    document.addEventListener("mousemove", update_mouse_pos, true);
+    document.addEventListener("mouseup", on_mouse_up, true);
+    document.addEventListener("mousedown", on_mouse_down, true);
+    document.addEventListener("dblclick", on_mouse_dbclick, true);
+
+    var clientX, clientY;
+    // 鼠标按下的位置，用于判断鼠标是不是有很大的位移
+    var mouse_down_x, mouse_down_y;
+
+    /* 接受到取词通知时候的回调函数 */
+    function getRequest(text) {
+        console.log(text);
+        d.onTextClick && d.onTextClick();
+    }
+
+    function update_mouse_pos(event) {
+        clientX = event.clientX, clientY = event.clientY;
+    }
+    /* 得到鼠标位置所指的词语 */
+    function get_word_by_mouse() {
+        var ret = {
+            text: "",
+            pos: -1
+        };
+        if (clientY == 0 || clientY == 0) {
+            return ret;
+        }
+        var r = document.caretRangeFromPoint(clientX, clientY);
+        if (!r) {
+            return ret;
+        }
+        if (r.startContainer.data) {
+            var rcText = null;
+            if (r.startContainer.getBoundingClientRect) {
+                rcText = r.startContainer.getBoundingClientRect();
+            } else if (r.startContainer.parentElement && r.startContainer.parentElement.getBoundingClientRect) {
+                rcText = r.startContainer.parentElement.getBoundingClientRect();
+            }
+            if (rcText == null || (rcText && rcText.left < clientX && clientX < rcText.right && rcText.top < clientY && clientY < rcText.bottom)) {
+                ret.text = r.startContainer.data;
+                ret.pos = r.startOffset;
+                return ret;
+            }
+        }
+        return ret;
+    };
+
+    function on_mouse_down(event) {
+        mouse_down_x = event.clientX;
+        mouse_down_y = event.clientY;
+    }
+
+    function on_mouse_up(event) {
+        if (Math.abs(event.clientX - mouse_down_x) > 2 || Math.abs(event.clientY - mouse_down_y) > 2) {
+            var sText = document.selection == undefined ? document.getSelection().toString() : document.selection.createRange().text;
+            if (sText != "") {
+                // todo: 字符串过长的问题.
+                if (sText.length > 2000) sText = sText.substr(0, 2000);
+                getRequest(sText);
+            }
+        }
+    }
+
+    function on_mouse_dbclick(event) {
+        var sText = document.selection == undefined ? document.getSelection().toString() : document.selection.createRange().text;
+        if (sText != "") {
+            // todo: 字符串过长的问题.
+            if (sText.length > 2000) sText = sText.substr(0, 2000);
+        	getRequest(sText);
+        }
+    }
+}(document)
