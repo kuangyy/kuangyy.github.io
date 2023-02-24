@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head><meta name="generator" content="Hexo 3.9.0">
+<head>
   <meta charset="utf-8">
   
 
@@ -9,11 +9,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta property="og:type" content="website">
 <meta property="og:title" content="KYY&#39;s Simple Website By Hexo">
-<meta property="og:url" content="http://kykys.cn/page/3/index.html">
+<meta property="og:url" content="http://kyyc.xyz/page/3/">
 <meta property="og:site_name" content="KYY&#39;s Simple Website By Hexo">
-<meta property="og:locale" content="zh-cn">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="KYY">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="KYY&#39;s Simple Website By Hexo">
   
     <link rel="alternate" href="/atom.xml" title="KYY&#39;s Simple Website By Hexo" type="application/atom+xml">
   
@@ -26,13 +26,15 @@
     <!-- font awesome -->
     <link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="/css/style.css">
+    
+<link rel="stylesheet" href="/css/style.css">
+
 
     <!-- custom css -->
     <link href="/resources/css/custom.css" rel="stylesheet">
 
-</head>
-</html>
+<meta name="generator" content="Hexo 6.3.0"></head>
+
 <body>
   <div id="container">
     <div id="wrap">
@@ -61,13 +63,376 @@
         <a id="nav-search-btn" class="nav-icon" title="Search"></a>
       </nav>
       <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://kykys.cn"></form>
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://kyyc.xyz"></form>
       </div>
     </div>
   </div>
 </header>
       <div class="outer">
         <section id="main">
+  
+    <article id="post-note" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/06/26/note/" class="article-date">
+  <time datetime="2019-06-26T06:20:32.000Z" itemprop="datePublished">2019-06-26</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/06/26/note/">
+        
+        note
+      </a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="Flutter"><a href="#Flutter" class="headerlink" title="Flutter"></a>Flutter</h2><h2 id="weex"><a href="#weex" class="headerlink" title="weex"></a>weex</h2><h2 id="nodejs"><a href="#nodejs" class="headerlink" title="nodejs"></a>nodejs</h2><h2 id="weex-1"><a href="#weex-1" class="headerlink" title="weex"></a>weex</h2>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://kyyc.xyz/2019/06/26/note/" data-id="clei9rsnh000hakvpfayt1gj9" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/note/" rel="tag">note</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-redis-note-1" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/06/26/redis-note-1/" class="article-date">
+  <time datetime="2019-06-26T05:56:01.000Z" itemprop="datePublished">2019-06-26</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/06/26/redis-note-1/">
+        
+        redis-note-1
+      </a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="1、缓存"><a href="#1、缓存" class="headerlink" title="1、缓存"></a>1、缓存</h2><p>缓存现在几乎是所有中大型网站都在用的必杀技，合理的利用缓存不仅能够提升网站访问速度，还能大大降低数据库的压力。Redis提供了键过期功能，也提供了灵活的键淘汰策略，所以，现在Redis用在缓存的场合非常多。</p>
+<h2 id="2、排行榜"><a href="#2、排行榜" class="headerlink" title="2、排行榜"></a>2、排行榜</h2><p>很多网站都有排行榜应用的，如京东的月度销量榜单、商品按时间的上新排行榜等。Redis提供的有序集合数据类构能实现各种复杂的排行榜应用。</p>
+<h2 id="3、计数器"><a href="#3、计数器" class="headerlink" title="3、计数器"></a>3、计数器</h2><p>什么是计数器，如电商网站商品的浏览量、视频网站视频的播放数等。为了保证数据实时效，每次浏览都得给+1，并发量高时如果每次都请求数据库操作无疑是种挑战和压力。Redis提供的incr命令来实现计数器功能，内存操作，性能非常好，非常适用于这些计数场景。</p>
+<h2 id="4、分布式会话"><a href="#4、分布式会话" class="headerlink" title="4、分布式会话"></a>4、分布式会话</h2><p>集群模式下，在应用不多的情况下一般使用容器自带的session复制功能就能满足，当应用增多相对复杂的系统中，一般都会搭建以Redis等内存数据库为中心的session服务，session不再由容器管理，而是由session服务及内存数据库管理。</p>
+<h2 id="5、分布式锁"><a href="#5、分布式锁" class="headerlink" title="5、分布式锁"></a>5、分布式锁</h2><p>在很多互联网公司中都使用了分布式技术，分布式技术带来的技术挑战是对同一个资源的并发访问，如全局ID、减库存、秒杀等场景，并发量不大的场景可以使用数据库的悲观锁、乐观锁来实现，但在并发量高的场合中，利用数据库锁来控制资源的并发访问是不太理想的，大大影响了数据库的性能。可以利用Redis的setnx功能来编写分布式的锁，如果设置返回1说明获取锁成功，否则获取锁失败，实际应用中要考虑的细节要更多。</p>
+<h2 id="6、-社交网络"><a href="#6、-社交网络" class="headerlink" title="6、 社交网络"></a>6、 社交网络</h2><p>点赞、踩、关注&#x2F;被关注、共同好友等是社交网站的基本功能，社交网站的访问量通常来说比较大，而且传统的关系数据库类型不适合存储这种类型的数据，Redis提供的哈希、集合等数据结构能很方便的的实现这些功能。</p>
+<h2 id="7、最新列表"><a href="#7、最新列表" class="headerlink" title="7、最新列表"></a>7、最新列表</h2><p>Redis列表结构，LPUSH可以在列表头部插入一个内容ID作为关键字，LTRIM可用来限制列表的数量，这样列表永远为N个ID，无需查询最新的列表，直接根据ID去到对应的内容页即可。</p>
+<h2 id="8、消息系统"><a href="#8、消息系统" class="headerlink" title="8、消息系统"></a>8、消息系统</h2><p>消息队列是大型网站必用中间件，如ActiveMQ、RabbitMQ、Kafka等流行的消息队列中间件，主要用于业务解耦、流量削峰及异步处理实时性低的业务。Redis提供了发布&#x2F;订阅及阻塞队列功能，能实现一个简单的消息队列系统。另外，这个不能和专业的消息中间件相比。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://kyyc.xyz/2019/06/26/redis-note-1/" data-id="clei9rsnl000kakvpduuz9fv0" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SC/" rel="tag">SC</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/cache/" rel="tag">cache</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-java-v11" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/06/26/java-v11/" class="article-date">
+  <time datetime="2019-06-26T05:46:01.000Z" itemprop="datePublished">2019-06-26</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/06/26/java-v11/">
+        
+        java-v11
+      </a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Java-11"><a href="#Java-11" class="headerlink" title="Java 11"></a>Java 11</h1><h2 id="1、本地变量类型推断"><a href="#1、本地变量类型推断" class="headerlink" title="1、本地变量类型推断"></a>1、本地变量类型推断</h2><p>什么是局部变量类型推断？</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var javastack = &quot;javastack&quot;;</span><br><span class="line">System.out.println(javastack);</span><br></pre></td></tr></table></figure>
+
+<p>大家看出来了，局部变量类型推断就是左边的类型直接使用 var 定义，而不用写具体的类型，编译器能根据右边的表达式自动推断类型，如上面的 String 。</p>
+<p>var javastack &#x3D; “javastack”;<br>就等于：</p>
+<p>String javastack &#x3D; “javastack”;<br>更多使用详情请参考这篇文章《Java 10 实战第 1 篇：局部变量类型推断》，这里不再重复了。</p>
+<h2 id="2、字符串加强"><a href="#2、字符串加强" class="headerlink" title="2、字符串加强"></a>2、字符串加强</h2><p>Java 11 增加了一系列的字符串处理方法，如以下所示。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">// 判断字符串是否为空白</span><br><span class="line">&quot; &quot;.isBlank();                // true</span><br><span class="line"></span><br><span class="line">// 去除首尾空格</span><br><span class="line">&quot; Javastack &quot;.strip();          // &quot;Javastack&quot;</span><br><span class="line"></span><br><span class="line">// 去除尾部空格 </span><br><span class="line">&quot; Javastack &quot;.stripTrailing();  // &quot; Javastack&quot;</span><br><span class="line"></span><br><span class="line">// 去除首部空格 </span><br><span class="line">&quot; Javastack &quot;.stripLeading();   // &quot;Javastack &quot;</span><br><span class="line"></span><br><span class="line">// 复制字符串</span><br><span class="line">&quot;Java&quot;.repeat(3);             // &quot;JavaJavaJava&quot;</span><br><span class="line"></span><br><span class="line">// 行数统计</span><br><span class="line">&quot;A\nB\nC&quot;.lines().count();    // 3</span><br></pre></td></tr></table></figure>
+
+<h2 id="3、集合加强"><a href="#3、集合加强" class="headerlink" title="3、集合加强"></a>3、集合加强</h2><p>自 Java 9 开始，Jdk 里面为集合（List&#x2F; Set&#x2F; Map）都添加了 of 和 copyOf 方法，它们两个都用来创建不可变的集合，来看下它们的使用和区别。</p>
+<p>示例1：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var list = List.of(&quot;Java&quot;, &quot;Python&quot;, &quot;C&quot;);</span><br><span class="line">var copy = List.copyOf(list);</span><br><span class="line">System.out.println(list == copy);   // true</span><br></pre></td></tr></table></figure>
+<p>示例2：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var list = new ArrayList&lt;String&gt;();</span><br><span class="line">var copy = List.copyOf(list);</span><br><span class="line">System.out.println(list == copy);   // false</span><br></pre></td></tr></table></figure>
+
+<p>示例1和2代码差不多，为什么一个为true,一个为false?</p>
+<p>来看下它们的源码：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">static &lt;E&gt; List&lt;E&gt; of(E... elements) &#123;</span><br><span class="line">    switch (elements.length) &#123; // implicit null check of elements</span><br><span class="line">        case 0:</span><br><span class="line">            return ImmutableCollections.emptyList();</span><br><span class="line">        case 1:</span><br><span class="line">            return new ImmutableCollections.List12&lt;&gt;(elements[0]);</span><br><span class="line">        case 2:</span><br><span class="line">            return new ImmutableCollections.List12&lt;&gt;(elements[0], elements[1]);</span><br><span class="line">        default:</span><br><span class="line">            return new ImmutableCollections.ListN&lt;&gt;(elements);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">static &lt;E&gt; List&lt;E&gt; copyOf(Collection&lt;? extends E&gt; coll) &#123;</span><br><span class="line">    return ImmutableCollections.listCopy(coll);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">static &lt;E&gt; List&lt;E&gt; listCopy(Collection&lt;? extends E&gt; coll) &#123;</span><br><span class="line">    if (coll instanceof AbstractImmutableList &amp;&amp; coll.getClass() != SubList.class) &#123;</span><br><span class="line">        return (List&lt;E&gt;)coll;</span><br><span class="line">    &#125; else &#123;</span><br><span class="line">        return (List&lt;E&gt;)List.of(coll.toArray());</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+<p>可以看出 copyOf 方法会先判断来源集合是不是 AbstractImmutableList 类型的，如果是，就直接返回，如果不是，则调用 of 创建一个新的集合。</p>
+<p>示例2因为用的 new 创建的集合，不属于不可变 AbstractImmutableList 类的子类，所以 copyOf 方法又创建了一个新的实例，所以为false.</p>
+<p>注意：使用 of 和 copyOf 创建的集合为不可变集合，不能进行添加、删除、替换、排序等操作，不然会报 java.lang.UnsupportedOperationException 异常。<br>上面演示了 List 的 of 和 copyOf 方法，Set 和 Map 接口都有。</p>
+<h2 id="4、Stream-加强"><a href="#4、Stream-加强" class="headerlink" title="4、Stream 加强"></a>4、Stream 加强</h2><p>Stream 是 Java 8 中的新特性，Java 9 开始对 Stream 增加了以下 4 个新方法。</p>
+<ul>
+<li><ol>
+<li>增加单个参数构造方法，可为null</li>
+</ol>
+</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Stream.ofNullable(null).count(); // 0</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><ol start="2">
+<li>增加 takeWhile 和 dropWhile 方法</li>
+</ol>
+</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Stream.of(1, 2, 3, 2, 1)</span><br><span class="line">    .takeWhile(n -&gt; n &lt; 3)</span><br><span class="line">    .collect(Collectors.toList());  // [1, 2]</span><br></pre></td></tr></table></figure>
+<p>从开始计算，当 n &lt; 3 时就截止。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Stream.of(1, 2, 3, 2, 1)</span><br><span class="line">    .dropWhile(n -&gt; n &lt; 3)</span><br><span class="line">    .collect(Collectors.toList());  // [3, 2, 1]</span><br></pre></td></tr></table></figure>
+<p>这个和上面的相反，一旦 n &lt; 3 不成立就开始计算。</p>
+<ul>
+<li>3）iterate重载</li>
+</ul>
+<p>这个 iterate 方法的新重载方法，可以让你提供一个 Predicate (判断条件)来指定什么时候结束迭代。</p>
+<p>如果你对 JDK 8 中的 Stream 还不熟悉，可以看之前分享的这一系列教程。</p>
+<h2 id="5、Optional-加强"><a href="#5、Optional-加强" class="headerlink" title="5、Optional 加强"></a>5、Optional 加强</h2><p>Opthonal 也增加了几个非常酷的方法，现在可以很方便的将一个 Optional 转换成一个 Stream, 或者当一个空 Optional 时给它一个替代的。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Optional.of(&quot;javastack&quot;).orElseThrow();     // javastack</span><br><span class="line">Optional.of(&quot;javastack&quot;).stream().count();  // 1</span><br><span class="line">Optional.ofNullable(null)</span><br><span class="line">    .or(() -&gt; Optional.of(&quot;javastack&quot;))</span><br><span class="line">    .get();   // javastack</span><br></pre></td></tr></table></figure>
+
+<h2 id="6、InputStream-加强"><a href="#6、InputStream-加强" class="headerlink" title="6、InputStream 加强"></a>6、InputStream 加强</h2><p>InputStream 终于有了一个非常有用的方法：transferTo，可以用来将数据直接传输到 OutputStream，这是在处理原始数据流时非常常见的一种用法，如下示例。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">var classLoader = ClassLoader.getSystemClassLoader();</span><br><span class="line">var inputStream = classLoader.getResourceAsStream(&quot;javastack.txt&quot;);</span><br><span class="line">var javastack = File.createTempFile(&quot;javastack2&quot;, &quot;txt&quot;);</span><br><span class="line">try (var outputStream = new FileOutputStream(javastack)) &#123;</span><br><span class="line">    inputStream.transferTo(outputStream);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="7、HTTP-Client-API"><a href="#7、HTTP-Client-API" class="headerlink" title="7、HTTP Client API"></a>7、HTTP Client API</h2><p>这是 Java 9 开始引入的一个处理 HTTP 请求的的孵化 HTTP Client API，该 API 支持同步和异步，而在 Java 11 中已经为正式可用状态，你可以在 java.net 包中找到这个 API。</p>
+<p>来看一下 HTTP Client 的用法：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">var request = HttpRequest.newBuilder()</span><br><span class="line">    .uri(URI.create(&quot;https://javastack.cn&quot;))</span><br><span class="line">    .GET()</span><br><span class="line">    .build();</span><br><span class="line">var client = HttpClient.newHttpClient();</span><br><span class="line"></span><br><span class="line">// 同步</span><br><span class="line">HttpResponse&lt;String&gt; response = client.send(request, HttpResponse.BodyHandlers.ofString());</span><br><span class="line">System.out.println(response.body());</span><br><span class="line"></span><br><span class="line">// 异步</span><br><span class="line">client.sendAsync(request, HttpResponse.BodyHandlers.ofString())</span><br><span class="line">    .thenApply(HttpResponse::body)</span><br><span class="line">    .thenAccept(System.out::println);</span><br></pre></td></tr></table></figure>
+
+<p>上面的 .GET() 可以省略，默认请求方式为 Get！</p>
+<p>更多使用示例可以看这个 API，后续有机会再做演示。</p>
+<p>现在 Java 自带了这个 HTTP Client API，我们以后还有必要用 Apache 的 HttpClient 工具包吗？</p>
+<h2 id="8、化繁为简，一个命令编译运行源代码"><a href="#8、化繁为简，一个命令编译运行源代码" class="headerlink" title="8、化繁为简，一个命令编译运行源代码"></a>8、化繁为简，一个命令编译运行源代码</h2><p>看下面的代码。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">// 编译</span><br><span class="line">javac Javastack.java</span><br><span class="line"></span><br><span class="line">// 运行</span><br><span class="line">java Javastack</span><br><span class="line">在我们的认知里面，要运行一个 Java 源代码必须先编译，再运行，两步执行动作。而在未来的 Java 11 版本中，通过一个 java 命令就直接搞定了，如以下所示。</span><br><span class="line"></span><br><span class="line">java Javastack.java</span><br></pre></td></tr></table></figure>
+
+<p>更多新特性</p>
+<blockquote>
+<p>Flow API for reactive programming<br>Java Module System<br>Application Class Data Sharing<br>Dynamic Class-File Constants<br>Java REPL (JShell)<br>Flight Recorder<br>Unicode 10<br>G1: Full Parallel Garbage Collector<br>ZGC: Scalable Low-Latency Garbage Collector<br>Epsilon: No-Op Garbage Collector<br>Deprecate the Nashorn JavaScript Engine<br>…</p>
+</blockquote>
+<p>历史新特性</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">Java 11 要来了，编译运行一个命令搞定</span><br><span class="line">JDK 11 发布计划来了，已确定 3个 新特性</span><br><span class="line">Java 10 实战第 1 篇：局部变量类型推断</span><br><span class="line">JDK 5 ~ 10 新特性倾情整理</span><br><span class="line">JDK 10 的 10 个新特性</span><br><span class="line">JDK 10 最重要的 5 个新特性</span><br><span class="line">JDK 9 的 9 个新特性</span><br><span class="line">JDK 9 新特性实战：简化流关闭新姿势</span><br><span class="line">JDK 8 的排序大法</span><br><span class="line">JDK 8 新特性之 Lambda 表达式</span><br><span class="line">JDK 8 新特性之函数式接口</span><br><span class="line">JDK 8 新特性之方法引用</span><br><span class="line">JDK 8 新特性之接口默认方法与静态方法</span><br><span class="line">JDK 8 新特性之 Optional</span><br><span class="line">JDK 8 新特性之重复注解</span><br><span class="line">JDK 8 新特性之 Stream 流</span><br><span class="line">JDK 8 新特性之 Stream 流（一）基础体验</span><br><span class="line">JDK 8 新特性之 Stream 流（二）关键知识点</span><br><span class="line">JDK 8 新特性之 Stream 流（三）缩减操作</span><br><span class="line">JDK 8 新特性之 Stream 流（四）并行流</span><br><span class="line">JDK 8 新特性之 Stream 流（五）映射</span><br><span class="line">JDK 8 新特性之 Stream 流（六）收集缩</span><br><span class="line">JDK 8 新特性之 Stream 流（七）流与迭代器</span><br><span class="line">JDK 8 新特性之扩展篇</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://kyyc.xyz/2019/06/26/java-v11/" data-id="clei9rsn30005akvp0jw05tar" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SC/" rel="tag">SC</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/java/" rel="tag">java</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-how-to-write" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/06/26/how-to-write/" class="article-date">
+  <time datetime="2019-06-26T03:52:37.000Z" itemprop="datePublished">2019-06-26</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/06/26/how-to-write/">
+        
+        how-to-write
+      </a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><code>markdown </code></p>
+<p><em>斜体</em>或_斜体_<br><strong>粗体</strong><br><em><strong>加粗斜体</strong></em><br><del>删除线</del></p>
+<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4><h5 id="五级标题"><a href="#五级标题" class="headerlink" title="五级标题"></a>五级标题</h5><h6 id="六级标题"><a href="#六级标题" class="headerlink" title="六级标题"></a>六级标题</h6><p><a target="_blank" rel="noopener" href="http://kykys.cn/">超链接</a></p>
+<p>我经常去的几个网站<a target="_blank" rel="noopener" href="https://github.com/" title="GitHub">GitHub</a>、<a target="_blank" rel="noopener" href="https://www.zhihu.com/" title="知乎">知乎</a>以及<a target="_blank" rel="noopener" href="http://www.jianshu.com/" title="简书">简书</a><br><a target="_blank" rel="noopener" href="http://www.jianshu.com/" title="简书">简书</a>是一个不错的<a target="_blank" rel="noopener" href="http://www.jianshu.com/">写作社区</a>。</p>
+<p><a target="_blank" rel="noopener" href="http://example.com/">http://example.com/</a></p>
+<ul>
+<li>无序列表项 一</li>
+<li>无序列表项 二</li>
+<li>无序列表项 三</li>
+</ul>
+<ol>
+<li>有序列表项 一</li>
+<li>有序列表项 二</li>
+<li>有序列表项 三</li>
+</ol>
+<p>: 轻量级文本标记语言</p>
+<ul>
+<li><p>轻轻的我走</p>
+</li>
+<li><p>阅读的方法:</p>
+<blockquote>
+<p>打开书本。<br>打开电灯。</p>
+</blockquote>
+</li>
+</ul>
+<p>1986. What a great season.</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/1001659-7535c9e3fe16240d?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="快乐学习"></p>
+<p>使用 Markdown<a href="Markdown%E6%98%AF%E4%B8%80%E7%A7%8D%E7%BA%AF%E6%96%87%E6%9C%AC%E6%A0%87%E8%AE%B0%E8%AF%AD%E8%A8%80">^1</a>可以效率的书写文档, 直接转换成 HTML[^2], 你可以使用简书或者支持Markdown的编辑器进行书写。</p>
+<p>[^2]:HyperText Markup Language 超文本标记语言</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://kyyc.xyz/2019/06/26/how-to-write/" data-id="clei9rsn70008akvp8oxt9t0z" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/markdown/" rel="tag">markdown</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-Escape-Analysis" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/06/26/Escape-Analysis/" class="article-date">
+  <time datetime="2019-06-26T03:50:52.000Z" itemprop="datePublished">2019-06-26</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/06/26/Escape-Analysis/">
+        
+        Escape_Analysis
+      </a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="什么是逃逸分析？"><a href="#什么是逃逸分析？" class="headerlink" title="什么是逃逸分析？"></a>什么是逃逸分析？</h1><p>关于 Java 逃逸分析的定义：</p>
+<p>逃逸分析（Escape Analysis）简单来讲就是，Java Hotspot 虚拟机可以分析新创建对象的使用范围，并决定是否在 Java 堆上分配内存的一项技术。</p>
+<p>逃逸分析的 JVM 参数如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">开启逃逸分析：-XX:+DoEscapeAnalysis</span><br><span class="line">关闭逃逸分析：-XX:-DoEscapeAnalysis</span><br><span class="line">显示分析结果：-XX:+PrintEscapeAnalysis</span><br><span class="line">逃逸分析技术在 Java SE 6u23+ 开始支持，并默认设置为启用状态，可以不用额外加这个参数。</span><br></pre></td></tr></table></figure>
+
+<p>逃逸分析算法<br>Java Hotspot 编译器实现下面论文中描述的逃逸算法：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">[Choi99] Jong-Deok Choi, Manish Gupta, Mauricio Seffano,</span><br><span class="line">          Vugranam C. Sreedhar, Sam Midkiff,</span><br><span class="line">          &quot;Escape Analysis for Java&quot;, Procedings of ACM SIGPLAN</span><br><span class="line">          OOPSLA  Conference, November 1, 1999</span><br><span class="line">根据 Jong-Deok Choi, Manish Gupta, Mauricio Seffano,Vugranam C. Sreedhar, Sam Midkiff 等大牛在论文《Escape Analysis for Java》中描述的算法进行逃逸分析的。</span><br></pre></td></tr></table></figure>
+
+<p>该算法引入了连通图，用连通图来构建对象和对象引用之间的可达性关系，并在次基础上，提出一种组合数据流分析法。</p>
+<p>由于算法是上下文相关和流敏感的，并且模拟了对象任意层次的嵌套关系，所以分析精度较高，只是运行时间和内存消耗相对较大。</p>
+<p>对象逃逸状态<br>我们了解了 Java 中的逃逸分析技术，再来了解下一个对象的逃逸状态。</p>
+<h2 id="1、全局逃逸（GlobalEscape）"><a href="#1、全局逃逸（GlobalEscape）" class="headerlink" title="1、全局逃逸（GlobalEscape）"></a>1、全局逃逸（GlobalEscape）</h2><p>即一个对象的作用范围逃出了当前方法或者当前线程，有以下几种场景：</p>
+<p>对象是一个静态变量<br>对象是一个已经发生逃逸的对象<br>对象作为当前方法的返回值</p>
+<h2 id="2、参数逃逸（ArgEscape）"><a href="#2、参数逃逸（ArgEscape）" class="headerlink" title="2、参数逃逸（ArgEscape）"></a>2、参数逃逸（ArgEscape）</h2><p>即一个对象被作为方法参数传递或者被参数引用，但在调用过程中不会发生全局逃逸，这个状态是通过被调方法的字节码确定的。</p>
+<h2 id="3、没有逃逸"><a href="#3、没有逃逸" class="headerlink" title="3、没有逃逸"></a>3、没有逃逸</h2><p>即方法中的对象没有发生逃逸。</p>
+<p>逃逸分析优化<br>针对上面第三点，当一个对象没有逃逸时，可以得到以下几个虚拟机的优化。</p>
+<ul>
+<li><ol>
+<li>锁消除</li>
+</ol>
+</li>
+</ul>
+<p>我们知道线程同步锁是非常牺牲性能的，当编译器确定当前对象只有当前线程使用，那么就会移除该对象的同步锁。</p>
+<p>例如，StringBuffer 和 Vector 都是用 synchronized 修饰线程安全的，但大部分情况下，它们都只是在当前线程中用到，这样编译器就会优化移除掉这些锁操作。</p>
+<p>锁消除的 JVM 参数如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">开启锁消除：-XX:+EliminateLocks</span><br><span class="line">关闭锁消除：-XX:-EliminateLocks</span><br><span class="line">锁消除在 JDK8 中都是默认开启的，并且锁消除都要建立在逃逸分析的基础上。</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><ol start="2">
+<li>标量替换</li>
+</ol>
+</li>
+</ul>
+<p>首先要明白标量和聚合量，基础类型和对象的引用可以理解为标量，它们不能被进一步分解。而能被进一步分解的量就是聚合量，比如：对象。</p>
+<p>对象是聚合量，它又可以被进一步分解成标量，将其成员变量分解为分散的变量，这就叫做标量替换。</p>
+<p>这样，如果一个对象没有发生逃逸，那压根就不用创建它，只会在栈或者寄存器上创建它用到的成员标量，节省了内存空间，也提升了应用程序性能。</p>
+<p>标量替换的 JVM 参数如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">开启标量替换：-XX:+EliminateAllocations</span><br><span class="line">关闭标量替换：-XX:-EliminateAllocations</span><br><span class="line">显示标量替换详情：-XX:+PrintEliminateAllocations</span><br><span class="line">标量替换同样在 JDK8 中都是默认开启的，并且都要建立在逃逸分析的基础上。</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><ol start="3">
+<li>栈上分配</li>
+</ol>
+</li>
+</ul>
+<p>当对象没有发生逃逸时，该对象就可以通过标量替换分解成成员标量分配在栈内存中，和方法的生命周期一致，随着栈帧出栈时销毁，减少了 GC 压力，提高了应用程序性能。</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>逃逸分析讲完了，总结了不少时间，我们也应该大概知道逃逸分析是为了优化 JVM 内存和提升程序性能的。</p>
+<p>我们知道这点后，在平时开发过程中就要可尽可能的控制变量的作用范围了，变量范围越小越好，让虚拟机尽可能有优化的空间。</p>
+<p>简单举一个例子吧，如：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">return sb;</span><br><span class="line">可以改为：</span><br><span class="line"></span><br><span class="line">return sb.toString();</span><br><span class="line">这是一种优化案例，把 StringBuilder 变量控制在了当前方法之内，没有逃出当前方法作用域。</span><br></pre></td></tr></table></figure>
+
+<p>参考资料：</p>
+<p><a target="_blank" rel="noopener" href="https://docs.oracle.com/javas">https://docs.oracle.com/javas</a><br><a target="_blank" rel="noopener" href="https://blog.csdn.net/rickiye...">https://blog.csdn.net/rickiye</a><br><a target="_blank" rel="noopener" href="https://blog.csdn.net/baichou">https://blog.csdn.net/baichou</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://kyyc.xyz/2019/06/26/Escape-Analysis/" data-id="clei9rsn00003akvp5v2u1yh0" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SC/" rel="tag">SC</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/java/" rel="tag">java</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
   
     <article id="post-first-log" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
@@ -99,7 +464,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://kykys.cn/2018/11/05/first-log/" data-id="cjxgaj13a0000w4w1yyjn8wsg" class="article-share-link">Share</a>
+      <a data-url="http://kyyc.xyz/2018/11/05/first-log/" data-id="clei9rsmv0001akvp8np76vo8" class="article-share-link">Share</a>
       
       
     </footer>
@@ -113,7 +478,7 @@
 
   <nav id="page-nav">
     
-    <a class="extend prev" rel="prev" href="/page/2/">&laquo; Prev</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span>
+    <a class="extend prev" rel="prev" href="/page/2/">&amp;laquo; Prev</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span>
   </nav>
 
 </section>
@@ -127,7 +492,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/SC/">SC</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/cache/">cache</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/git/">git</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/java/">java</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/jp/">jp</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/markdown/">markdown</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/music/">music</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/note/">note</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/poem/">poem</a></li></ul>
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/SC/" rel="tag">SC</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/cache/" rel="tag">cache</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/git/" rel="tag">git</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/java/" rel="tag">java</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/jp/" rel="tag">jp</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/markdown/" rel="tag">markdown</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/music/" rel="tag">music</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/note/" rel="tag">note</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/other/" rel="tag">other</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/poem/" rel="tag">poem</a></li></ul>
     </div>
   </div>
 
@@ -137,7 +502,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/SC/" style="font-size: 20px;">SC</a> <a href="/tags/cache/" style="font-size: 10px;">cache</a> <a href="/tags/git/" style="font-size: 10px;">git</a> <a href="/tags/java/" style="font-size: 13.33px;">java</a> <a href="/tags/jp/" style="font-size: 13.33px;">jp</a> <a href="/tags/markdown/" style="font-size: 10px;">markdown</a> <a href="/tags/music/" style="font-size: 13.33px;">music</a> <a href="/tags/note/" style="font-size: 16.67px;">note</a> <a href="/tags/poem/" style="font-size: 10px;">poem</a>
+      <a href="/tags/SC/" style="font-size: 20px;">SC</a> <a href="/tags/cache/" style="font-size: 10px;">cache</a> <a href="/tags/git/" style="font-size: 10px;">git</a> <a href="/tags/java/" style="font-size: 12.5px;">java</a> <a href="/tags/jp/" style="font-size: 12.5px;">jp</a> <a href="/tags/markdown/" style="font-size: 10px;">markdown</a> <a href="/tags/music/" style="font-size: 17.5px;">music</a> <a href="/tags/note/" style="font-size: 15px;">note</a> <a href="/tags/other/" style="font-size: 10px;">other</a> <a href="/tags/poem/" style="font-size: 10px;">poem</a>
     </div>
   </div>
 
@@ -146,7 +511,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/06/">六月 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/11/">十一月 2018</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/02/">二月 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/06/">六月 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/08/">八月 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/06/">六月 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/11/">十一月 2018</a></li></ul>
     </div>
   </div>
 
@@ -159,23 +524,23 @@
       <ul>
         
           <li>
-            <a href="/2019/06/28/How-do-I-love-thee/">How-do-I-love-thee</a>
+            <a href="/2023/02/24/imback/">imback</a>
           </li>
         
           <li>
-            <a href="/2019/06/27/Lemon/">Lemon</a>
+            <a href="/2022/06/27/hello-world/">Hello World</a>
           </li>
         
           <li>
-            <a href="/2019/06/27/仆が死のうと思ったのは/">仆が死のうと思ったのは</a>
+            <a href="/2019/08/07/note/">note</a>
           </li>
         
           <li>
-            <a href="/2019/06/27/gittalk/">gittalk</a>
+            <a href="/2019/08/06/linux-note/">linux-note</a>
           </li>
         
           <li>
-            <a href="/2019/06/27/totp/">totp</a>
+            <a href="/2019/06/30/have-no-worth/">have-no-worth</a>
           </li>
         
       </ul>
@@ -193,7 +558,7 @@
     
     <div class="outer">
         <div id="footer-info" class="inner">
-            &copy; 2019 KYY<br>
+            &copy; 2023 KYY<br>
             Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
         </div>
     </div>
@@ -219,11 +584,17 @@
 <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 
 
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
 
 
 <script src="/js/script.js"></script>
+
 
 
 

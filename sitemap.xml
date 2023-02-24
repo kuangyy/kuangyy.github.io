@@ -2,269 +2,471 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://kykys.cn/2019/06/28/How-do-I-love-thee/</loc>
+    <loc>http://kyyc.xyz/2023/02/24/imback/</loc>
     
-    <lastmod>2019-06-27T17:05:17.484Z</lastmod>
+    <lastmod>2023-02-24</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://kykys.cn/resources/html/v1/index.html</loc>
+    <loc>http://kyyc.xyz/resources/html/workflow/</loc>
     
-    <lastmod>2019-06-27T16:15:19.419Z</lastmod>
+    <lastmod>2022-06-27</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://kykys.cn/2019/06/27/gittalk/</loc>
+    <loc>http://kyyc.xyz/resources/html/workflow/README.html</loc>
     
-    <lastmod>2019-06-27T16:07:37.196Z</lastmod>
+    <lastmod>2022-06-27</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://kykys.cn/2019/06/26/java-v11/</loc>
+    <loc>http://kyyc.xyz/resources/html/v2_1/valentine's%20day.html</loc>
     
-    <lastmod>2019-06-27T16:07:37.177Z</lastmod>
+    <lastmod>2022-06-27</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://kykys.cn/2019/06/27/%E4%BB%86%E3%81%8C%E6%AD%BB%E3%81%AE%E3%81%86%E3%81%A8%E6%80%9D%E3%81%A3%E3%81%9F%E3%81%AE%E3%81%AF/</loc>
+    <loc>http://kyyc.xyz/resources/html/v2_1/time.html</loc>
     
-    <lastmod>2019-06-27T16:07:37.146Z</lastmod>
+    <lastmod>2022-06-27</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://kykys.cn/2019/06/27/Lemon/</loc>
+    <loc>http://kyyc.xyz/resources/html/v2/</loc>
     
-    <lastmod>2019-06-27T16:07:37.116Z</lastmod>
+    <lastmod>2022-06-27</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://kykys.cn/2019/06/26/note-1/</loc>
+    <loc>http://kyyc.xyz/resources/html/v1/what.html</loc>
     
-    <lastmod>2019-06-27T16:07:37.075Z</lastmod>
+    <lastmod>2022-06-27</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://kykys.cn/2019/06/26/note/</loc>
+    <loc>http://kyyc.xyz/resources/html/v1/photo.html</loc>
     
-    <lastmod>2019-06-27T16:07:37.031Z</lastmod>
+    <lastmod>2022-06-27</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://kykys.cn/2019/06/27/totp/</loc>
+    <loc>http://kyyc.xyz/resources/html/v1/music/</loc>
     
-    <lastmod>2019-06-27T16:07:37.004Z</lastmod>
+    <lastmod>2022-06-27</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://kykys.cn/2019/06/27/git/</loc>
+    <loc>http://kyyc.xyz/resources/html/v1/</loc>
     
-    <lastmod>2019-06-27T16:07:36.975Z</lastmod>
+    <lastmod>2022-06-27</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://kykys.cn/2019/06/26/redis-note-1/</loc>
+    <loc>http://kyyc.xyz/resources/html/v1/feature.html</loc>
     
-    <lastmod>2019-06-27T16:07:36.946Z</lastmod>
+    <lastmod>2022-06-27</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://kykys.cn/2019/06/26/how-to-write/</loc>
+    <loc>http://kyyc.xyz/resources/html/v1/demo.html</loc>
     
-    <lastmod>2019-06-27T16:07:36.900Z</lastmod>
+    <lastmod>2022-06-27</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://kykys.cn/2019/06/27/note/</loc>
+    <loc>http://kyyc.xyz/resources/html/v1/contact.html</loc>
     
-    <lastmod>2019-06-27T16:07:36.857Z</lastmod>
+    <lastmod>2022-06-27</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://kykys.cn/2019/06/26/Escape-Analysis/</loc>
+    <loc>http://kyyc.xyz/resources/html/v1/404.html</loc>
     
-    <lastmod>2019-06-27T16:06:40.969Z</lastmod>
+    <lastmod>2022-06-27</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://kykys.cn/2018/11/05/first-log/</loc>
+    <loc>http://kyyc.xyz/resources/html/oooc_lol/v1/</loc>
     
-    <lastmod>2019-06-27T15:16:39.576Z</lastmod>
+    <lastmod>2022-06-27</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://kykys.cn/resources/html/workflow/index.html</loc>
+    <loc>http://kyyc.xyz/resources/html/help_v1/game.html</loc>
     
-    <lastmod>2019-06-27T15:12:54.802Z</lastmod>
+    <lastmod>2022-06-27</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://kykys.cn/resources/html/workflow/README.html</loc>
+    <loc>http://kyyc.xyz/resources/html/help_v1/Passive%20Aggressive%20Passwords_files/uN4_cXtJDGb.html</loc>
     
-    <lastmod>2019-06-27T15:12:54.784Z</lastmod>
+    <lastmod>2022-06-27</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://kykys.cn/resources/html/v2_1/valentine's%20day.html</loc>
+    <loc>http://kyyc.xyz/resources/html/help_v1/Passive%20Aggressive%20Passwords_files/uN4_cXtJDGb(1).html</loc>
     
-    <lastmod>2019-06-27T15:12:54.783Z</lastmod>
+    <lastmod>2022-06-27</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://kykys.cn/resources/html/v2_1/time.html</loc>
+    <loc>http://kyyc.xyz/resources/html/help_v1/Passive%20Aggressive%20Passwords_files/tweet_button.cc55ce010cf84cc9f5752aec264d23e3.en.html</loc>
     
-    <lastmod>2019-06-27T15:12:54.782Z</lastmod>
+    <lastmod>2022-06-27</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://kykys.cn/resources/html/v2/index.html</loc>
+    <loc>http://kyyc.xyz/resources/html/help_v1/Passive%20Aggressive%20Passwords_files/saved_resource.html</loc>
     
-    <lastmod>2019-06-27T15:12:54.776Z</lastmod>
+    <lastmod>2022-06-27</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://kykys.cn/resources/html/v1/what.html</loc>
+    <loc>http://kyyc.xyz/resources/html/help_v1/Passive%20Aggressive%20Passwords_files/like.html</loc>
     
-    <lastmod>2019-06-27T15:12:54.765Z</lastmod>
+    <lastmod>2022-06-27</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://kykys.cn/resources/html/v1/photo.html</loc>
+    <loc>http://kyyc.xyz/resources/html/help_v1/Passive%20Aggressive%20Passwords_files/follow_button.cc55ce010cf84cc9f5752aec264d23e3.en.html</loc>
     
-    <lastmod>2019-06-27T15:12:54.735Z</lastmod>
+    <lastmod>2022-06-27</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://kykys.cn/resources/html/v1/music/index.html</loc>
+    <loc>http://kyyc.xyz/resources/html/help_v1/Passive%20Aggressive%20Passwords_files/follow_button.cc55ce010cf84cc9f5752aec264d23e3.en(1).html</loc>
     
-    <lastmod>2019-06-27T15:12:54.689Z</lastmod>
+    <lastmod>2022-06-27</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://kykys.cn/resources/html/v1/feature.html</loc>
+    <loc>http://kyyc.xyz/resources/html/help_v1/Passive%20Aggressive%20Passwords.html</loc>
     
-    <lastmod>2019-06-27T15:12:54.581Z</lastmod>
+    <lastmod>2022-06-27</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://kykys.cn/resources/html/v1/demo.html</loc>
+    <loc>http://kyyc.xyz/2022/06/27/hello-world/</loc>
     
-    <lastmod>2019-06-27T15:12:54.580Z</lastmod>
+    <lastmod>2022-06-27</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://kykys.cn/resources/html/v1/contact.html</loc>
+    <loc>http://kyyc.xyz/2019/08/07/note/</loc>
     
-    <lastmod>2019-06-27T15:12:54.556Z</lastmod>
+    <lastmod>2022-06-27</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://kykys.cn/resources/html/v1/404.html</loc>
+    <loc>http://kyyc.xyz/2019/08/06/linux-note/</loc>
     
-    <lastmod>2019-06-27T15:12:54.554Z</lastmod>
+    <lastmod>2022-06-27</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://kykys.cn/resources/html/oooc_lol/v1/index.html</loc>
+    <loc>http://kyyc.xyz/2019/06/30/have-no-worth/</loc>
     
-    <lastmod>2019-06-27T15:12:54.544Z</lastmod>
+    <lastmod>2022-06-27</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://kykys.cn/resources/html/help_v1/game.html</loc>
+    <loc>http://kyyc.xyz/2019/06/30/band-summer/</loc>
     
-    <lastmod>2019-06-27T15:12:54.540Z</lastmod>
+    <lastmod>2022-06-27</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://kykys.cn/resources/html/help_v1/Passive%20Aggressive%20Passwords_files/uN4_cXtJDGb.html</loc>
+    <loc>http://kyyc.xyz/2019/06/28/How-do-I-love-thee/</loc>
     
-    <lastmod>2019-06-27T15:12:54.537Z</lastmod>
+    <lastmod>2022-06-27</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://kykys.cn/resources/html/help_v1/Passive%20Aggressive%20Passwords_files/uN4_cXtJDGb(1).html</loc>
+    <loc>http://kyyc.xyz/2019/06/27/%E4%BB%86%E3%81%8C%E6%AD%BB%E3%81%AE%E3%81%86%E3%81%A8%E6%80%9D%E3%81%A3%E3%81%9F%E3%81%AE%E3%81%AF/</loc>
     
-    <lastmod>2019-06-27T15:12:54.536Z</lastmod>
+    <lastmod>2022-06-27</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://kykys.cn/resources/html/help_v1/Passive%20Aggressive%20Passwords_files/tweet_button.cc55ce010cf84cc9f5752aec264d23e3.en.html</loc>
+    <loc>http://kyyc.xyz/2019/06/27/totp/</loc>
     
-    <lastmod>2019-06-27T15:12:54.535Z</lastmod>
+    <lastmod>2022-06-27</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://kykys.cn/resources/html/help_v1/Passive%20Aggressive%20Passwords_files/saved_resource.html</loc>
+    <loc>http://kyyc.xyz/2019/06/27/gittalk/</loc>
     
-    <lastmod>2019-06-27T15:12:54.534Z</lastmod>
+    <lastmod>2022-06-27</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://kykys.cn/resources/html/help_v1/Passive%20Aggressive%20Passwords_files/like.html</loc>
+    <loc>http://kyyc.xyz/2019/06/27/note/</loc>
     
-    <lastmod>2019-06-27T15:12:54.532Z</lastmod>
+    <lastmod>2022-06-27</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://kykys.cn/resources/html/help_v1/Passive%20Aggressive%20Passwords_files/follow_button.cc55ce010cf84cc9f5752aec264d23e3.en.html</loc>
+    <loc>http://kyyc.xyz/2019/06/27/Lemon/</loc>
     
-    <lastmod>2019-06-27T15:12:54.528Z</lastmod>
+    <lastmod>2022-06-27</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://kykys.cn/resources/html/help_v1/Passive%20Aggressive%20Passwords_files/follow_button.cc55ce010cf84cc9f5752aec264d23e3.en(1).html</loc>
+    <loc>http://kyyc.xyz/2019/06/27/git/</loc>
     
-    <lastmod>2019-06-27T15:12:54.527Z</lastmod>
+    <lastmod>2022-06-27</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://kykys.cn/resources/html/help_v1/Passive%20Aggressive%20Passwords.html</loc>
+    <loc>http://kyyc.xyz/2019/06/26/redis-note-1/</loc>
     
-    <lastmod>2019-06-27T15:12:54.522Z</lastmod>
+    <lastmod>2022-06-27</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://kykys.cn/2019/06/26/hello-world/</loc>
+    <loc>http://kyyc.xyz/2019/06/26/note-1/</loc>
     
-    <lastmod>2019-06-26T13:52:20.832Z</lastmod>
+    <lastmod>2022-06-27</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
+  
+  <url>
+    <loc>http://kyyc.xyz/2019/06/26/note/</loc>
+    
+    <lastmod>2022-06-27</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://kyyc.xyz/2019/06/26/java-v11/</loc>
+    
+    <lastmod>2022-06-27</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://kyyc.xyz/2019/06/26/how-to-write/</loc>
+    
+    <lastmod>2022-06-27</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://kyyc.xyz/2019/06/26/Escape-Analysis/</loc>
+    
+    <lastmod>2022-06-27</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://kyyc.xyz/2018/11/05/first-log/</loc>
+    
+    <lastmod>2022-06-27</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+
+  <url>
+    <loc>http://kyyc.xyz/</loc>
+    <lastmod>2023-02-24</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  
+  <url>
+    <loc>http://kyyc.xyz/tags/SC/</loc>
+    <lastmod>2023-02-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://kyyc.xyz/tags/java/</loc>
+    <lastmod>2023-02-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://kyyc.xyz/tags/markdown/</loc>
+    <lastmod>2023-02-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://kyyc.xyz/tags/git/</loc>
+    <lastmod>2023-02-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://kyyc.xyz/tags/note/</loc>
+    <lastmod>2023-02-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://kyyc.xyz/tags/music/</loc>
+    <lastmod>2023-02-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://kyyc.xyz/tags/jp/</loc>
+    <lastmod>2023-02-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://kyyc.xyz/tags/cache/</loc>
+    <lastmod>2023-02-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://kyyc.xyz/tags/poem/</loc>
+    <lastmod>2023-02-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://kyyc.xyz/tags/other/</loc>
+    <lastmod>2023-02-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+
   
 </urlset>
